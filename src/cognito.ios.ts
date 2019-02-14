@@ -2,7 +2,7 @@ import { Common } from './cognito.common';
 import { UserSession } from "./index";
 
 declare const AWSServiceConfiguration, AWSCognitoIdentityUserPoolConfiguration, AWSCognitoIdentityUserPool,
-    AWSRegionUSEast1, AWSCognitoIdentityUserAttributeType;
+    AWSRegionEUWest1, AWSCognitoIdentityUserAttributeType;
 
 const main_queue = dispatch_get_current_queue();
 
@@ -13,7 +13,7 @@ export class Cognito extends Common {
         super();
 
         const serviceConf = new AWSServiceConfiguration(
-            AWSRegionUSEast1,
+            AWSRegionEUWest1,
             null
         );
 
